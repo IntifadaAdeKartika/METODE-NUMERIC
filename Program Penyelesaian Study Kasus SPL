@@ -1,0 +1,19 @@
+import numpy as np
+
+# Matriks koefisien
+A = np.array([
+    [2, 1, 1],
+    [1, 2, 1],
+    [1, 1, 2]
+])
+
+# Vektor hasil
+B = np.array([100, 80, 90])
+
+# Menyelesaikan SPL
+solusi = np.linalg.solve(A, B)
+
+print("Jumlah produk per mesin:")
+print(f"Mesin 1: {solusi[0]:.2f} unit")
+print(f"Mesin 2: {solusi[1]:.2f} unit")
+print(f"Mesin 3: {solusi[2]:.2f} unit")
